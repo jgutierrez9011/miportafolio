@@ -119,22 +119,25 @@ const services = [
 
 const projects = [
   {
-    img: 'https://prestamos-production-cf2d.up.railway.app/pages/usuarios/login.php',
+    img: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=480&fit=crop&auto=format',
     name: 'Sistema de Gestión de Préstamos',
     problem: 'Automatización del ciclo completo de préstamos, eliminando registros manuales en papel y reduciendo tiempos de aprobación en un 70 %.',
     techs: ['PHP', 'JavaScript', 'PostgreSQL', 'Bootstrap'],
+    url:'https://prestamos-production-cf2d.up.railway.app/pages/usuarios/login.php'
   },
   {
-    img: 'https://puntodeventa-production-4c54.up.railway.app/page/login.php',
+    img: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=480&fit=crop&auto=format',
     name: 'Sistema de punto de venta para sucursales',
     problem: 'Gestión centralizada de pedidos, usuarios y roles para una empresa distribuidora con múltiples sucursales.',
     techs: ['PHP', 'JavaScript', 'PostgreSQL', 'Bootstrap'],
+    url: 'https://puntodeventa-production-4c54.up.railway.app/page/login.php'
   },
   {
-    img: 'https://tienda-online-react-7qm72p4a0-asdfs-projects-5a628ebd.vercel.app/',
+    img: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&h=480&fit=crop&auto=format',
     name: 'Plataforma de Expedientes Clínicos',
     problem: 'Digitalización de historias clínicas y agendamiento de citas médicas para clínicas privadas.',
     techs: ['React', 'Java', 'PostgreSQL', 'Kubernetes'],
+    url: 'https://tienda-online-react-7qm72p4a0-asdfs-projects-5a628ebd.vercel.app/'
   },
 ]
 
@@ -376,10 +379,12 @@ function Projects() {
                   ))}
                 </div>
                 <a
-                  href="#"
+                  href={p.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-1.5 text-sm font-semibold text-[#2563eb] hover:text-[#1d4ed8] group/link transition-colors"
                 >
-                  Ver caso de estudio
+                  Ver sistema
                   <span className="group-hover/link:translate-x-1 transition-transform duration-200">
                     <IconArrow />
                   </span>
